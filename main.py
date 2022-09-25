@@ -5,12 +5,18 @@ MAX_LEISURE_TIME = 30
 ANNOYED_VALUE = 2
 ANGRY_VALUE = 3
 
-# Data set
+# Data set 4 -> a student who slacked off
 data = {
-
+    "canvas" : 60,
+    "khan academy" : 40,
+    "youtube" : 500,
+    "netflix" : 300,
+    "edx" : 0,
+    "twitter" : 80,
+    "instagram" : 70
 }
 
-# Allowed websites
+# Allowed websites 4
 allowedWebsites = {
     "canvas" : 0,
     "khan academy" : 0,
@@ -21,7 +27,7 @@ allowedWebsites = {
 tooMuchTime = []
 
 # Analysis
-print("Quack. Welcome to QuackTrack!")
+print("Quack. Welcome to Quack Track")
 print("Here are your results for this study session: ")
 
 
@@ -38,32 +44,15 @@ if len(tooMuchTime) >= ANNOYED_VALUE:
     tooMuchTime.insert(-1, "and")
     print("Nice going, but you spent too much time on", ' '.join(tooMuchTime), "!")
     print("""
-                  .-""-.
-                 /      \
-                /     (0 \______
-                |         "_____)
-                \        ,-----'
-                 \_    _/
-                  /    \
-                 /      \
-                /        \
-               /          \
-              /        :   |
-             /     ;   :   |
-    \\\     /  _.-'    :   |
-     \\\\  / _'        :   |
-      \\\\/ ;         :   /
-       \\  ;         :   /
-        \   `._`-'_.'  _/
-         \     ''' _.-'
-          \      / /
-           \    / /
-            \  /)(_______
-             )(_________<
-            (__________<
-    
+      ,~~.
+     (  9 )-_,
+(\___ )=='-'
+ \ .   ) )
+  \ `-' /
+   `~j-'   
+     "=:
     """)
-    print("You made me stand up")
+    print("You made me stand up 🧍😠️")
     
 elif len(tooMuchTime) >= ANGRY_VALUE:
     print("""
@@ -87,42 +76,20 @@ elif len(tooMuchTime) >= ANGRY_VALUE:
           `.                ,--'
             `-._________,--'
                     """)
-    print("STOP DUCKIN' AROUND")
+    print("STOP DUCKIN' AROUND 😡😡😡🦆🦆🦆")
 
 elif len(tooMuchTime) == 0:
     print("""
-                                    _
-                                ,-"" "".
-                              ,'  ____  `.
-                            ,'  ,'    `.  `._
-   (`.         _..--.._   ,'  ,'        \    \
-  (`-.\    .-""        ""'   /          (  d _b
- (`._  `-"" ,._             (            `-(   \
- <_  `     (  <`<            \              `-._\
-  <`-       (__< <           :
-   (__        (_<_<          ;
-    `------------------------------------------    
+                  _      _      _
+               __(.)< __(.)> __(.)=
+               \___)  \___)  \___)    
     """)
-    print("Hmm, looks like there was no information...")
+    print("Hmm, looks like there was no information...🤔")
     
 else:
-    print("""
-    
-            ,----,
-       ___.`      `,
-       `===  D     :
-         `'.      .'
-            )    (                   ,
-           /      \_________________/|
-          /                          |
-         |                           ;
-         |               _____       /
-         |      \       ______7    ,'
-         |       \    ______7     /
-          \       `-,____7      ,'   
-    ^~^~^~^`\                  /~^~^~^~^
-      ~^~^~^ `----------------' ~^~^~^
-     ~^~^~^~^~^^~^~^~^~^~^~^~^~^~^~^~
-
+    print(""" __
+             <(o )___
+              ( ._> /
+               `---'   
     """)
-    print("Good job, keep it up!")
+    print("Good job, keep it up 😛!")
