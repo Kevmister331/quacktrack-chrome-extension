@@ -1,80 +1,50 @@
-# Data set 1
+# Data set 1 -> studious student
 data = {
     "canvas" : 75,
     "khan academy" : 60,
-    "youtube" : 120,
-    "netflix" : 180,
-    "hbo max" : 300,
-    "edx" : 15,
-}
-
-# Allowed websites 1
-allowedWebsites = {
-    "canvas" : 0,
-    "khan academy" : 0,
-    "edx" : 0
-}
-
-# Data set 2 -> this student has allowed themselves to go on youtube and netflix
-data = {
-    "canvas" : 75,
-    "khan academy" : 60,
-    "youtube" : 120,
-    "netflix" : 180,
-    "hbo max" : 300,
-    "edx" : 15,
-}
-
-# Allowed websites 2
-allowedWebsites = {
-    "canvas" : 0,
-    "khan academy" : 0,
-    "edx" : 0,
     "youtube" : 0,
-    "netflix" : 0
+    "netflix" : 0,
+    "hbo max" : 0,
+    "edx" : 15,
 }
 
-# Data set 3 -> a very studious student
+# Restricted websites 1
+restrictedWebsites = {
+    "netflix" : 0,
+    "youtube" : 0,
+    "hbo max" : 0
+}
+
+# Data set 2 -> student who slacked off
 data = {
-    "canvas" : 60,
-    "khan academy" : 340,
-    "youtube" : 15,
-    "netflix" : 20,
-    "edx" : 30,
+    "canvas" : 75,
+    "khan academy" : 60,
+    "youtube" : 120,
+    "netflix" : 0,
+    "hbo max" : 50,
+    "edx" : 15,
 }
 
-# Allowed websites 3
-allowedWebsites = {
-    "canvas" : 0,
-    "khan academy" : 0,
-    "edx" : 0
+# Restricted websites 2
+restrictedWebsites = {
+    "netflix" : 0,
+    "youtube" : 0,
+    "hbo max" : 0
 }
 
-# Data set 4 -> a student who slacked off
+# Data set 3 -> student who slacked off more
 data = {
-    "canvas" : 60,
-    "khan academy" : 40,
-    "youtube" : 500,
+    "canvas" : 75,
+    "khan academy" : 60,
+    "youtube" : 180,
     "netflix" : 300,
-    "edx" : 0,
-    "twitter" : 80,
-    "instagram" : 70
+    "hbo max" : 50,
+    "edx" : 15,
 }
 
-# Allowed websites 4
-allowedWebsites = {
-    "canvas" : 0,
-    "khan academy" : 0,
-    "edx" : 0
-}
-
-# Data set 5 -> no data
-data = {
-}
-
-# Allowed websites 5
-allowedWebsites = {
-    "canvas" : 0,
-    "khan academy" : 0,
-    "edx" : 0
+# Restricted websites 3
+restrictedWebsites = {
+    "netflix" : 0,
+    "youtube" : 0,
+    "hbo max" : 0
 }

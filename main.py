@@ -5,22 +5,23 @@ MAX_LEISURE_TIME = 30
 ANNOYED_VALUE = 2
 ANGRY_VALUE = 3
 
-# Data set 4 -> a student who slacked off
+# Data set 6 -> same times as previous student 
+#               but he set more allowed websites
 data = {
-    "canvas" : 60,
-    "khan academy" : 40,
-    "youtube" : 500,
-    "netflix" : 300,
+    "canvas" : 0,
+    "khan academy" : 0,
+    "youtube" : 50,
+    "netflix" : 0,
     "edx" : 0,
-    "twitter" : 80,
-    "instagram" : 70
+    "twitter" : 50,
+    "instagram" : 50
 }
 
 # Allowed websites 4
-allowedWebsites = {
-    "canvas" : 0,
-    "khan academy" : 0,
-    "edx" : 0
+restrictedWebsites = {
+    "youtube" : 0,
+    "twitter" : 0,
+    "instagram" : 0
 }
 
 # Too much time spent on these websites
@@ -36,13 +37,13 @@ for key, value in data.items():
     print(key, ":", value, "minutes")
     
 for key, value in data.items():
-    if value > MAX_LEISURE_TIME and key not in allowedWebsites:
+    if value > MAX_LEISURE_TIME and key in restrictedWebsites:
         tooMuchTime.append(key)
 
 # Response
-if len(tooMuchTime) >= ANNOYED_VALUE:
+if len(tooMuchTime) >= ANNOYED_VALUE and len(tooMuchTime) < ANGRY_VALUE:
     tooMuchTime.insert(-1, "and")
-    print("Nice going, but you spent too much time on", ' '.join(tooMuchTime), "!")
+    print("Nice going, but you spent too much time on ", ' '.join(tooMuchTime), "!")
     print("""
       ,~~.
      (  9 )-_,
@@ -78,7 +79,7 @@ elif len(tooMuchTime) >= ANGRY_VALUE:
                     """)
     print("STOP DUCKIN' AROUND 😡😡😡🦆🦆🦆")
 
-elif len(tooMuchTime) == 0:
+elif len(data) == 0:
     print("""
                   _      _      _
                __(.)< __(.)> __(.)=
